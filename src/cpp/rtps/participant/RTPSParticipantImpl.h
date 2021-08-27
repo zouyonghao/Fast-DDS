@@ -517,6 +517,8 @@ private:
     std::function<bool(const std::string&)> type_check_fn_;
     //!Pool of send buffers
     std::unique_ptr<SendBuffersManager> send_buffers_;
+    //! Whether the Participant has been enabled
+    bool enabled_;
 
 #if HAVE_SECURITY
     // Security manager
